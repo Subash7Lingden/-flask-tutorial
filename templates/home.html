@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block body %} 
+
+
+<form clss="myform"  action="/predict" method="POST">
+    <h3>Fasting sugar:</h3>
+    <input type="number" name="FS"/>
+    <h3>Frequent Urination</h3>
+    <select name="FU">
+        <option value="1">YES</option>
+        <option value="0">NO</option>
+    </select>
+    <button class="btn #1e88e5 blue darken-1" type="submit">Post it</button>
+
+</form>
+{% endblock %}
